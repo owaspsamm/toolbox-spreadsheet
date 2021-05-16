@@ -1,0 +1,6 @@
+name: "Excel spreadsheet creator"
+description: "Create a spreadsheet"
+author: "Dan"
+runs:
+  using: "docker"
+  image: "Dockerfile"
