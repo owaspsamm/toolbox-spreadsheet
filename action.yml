@@ -1,6 +1,6 @@
 name: "Excel spreadsheet creator"
-description: "Create a spreadsheet"
-author: "Dan"
+description: "Create the SAMM spreadsheet from model files"
+author: "SAMM core team"
 runs:
   using: "docker"
   image: "Dockerfile"
