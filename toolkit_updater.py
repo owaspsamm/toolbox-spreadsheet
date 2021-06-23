@@ -6,7 +6,7 @@ import pandas as pd
 from openpyxl.utils.dataframe import dataframe_to_rows
 
 # Update This
-toolkit_file = "resources/SAMM_spreadsheet.xlsx"
+toolkit_file = "/opt/app/resources/SAMM_spreadsheet.xlsx"
 result_file = "/github/workspace/SAMM_spreadsheet.xlsx"
 data_files_dir = "/github/workspace/model"
 
