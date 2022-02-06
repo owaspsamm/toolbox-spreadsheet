@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.9
 COPY . /opt/app
 WORKDIR /opt/app
 ENV PYTHONPATH /opt/app
