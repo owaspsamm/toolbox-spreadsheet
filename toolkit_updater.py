@@ -10,6 +10,7 @@ toolkit_file = "/opt/app/resources/SAMM_spreadsheet.xlsx"
 result_file = "/github/workspace/SAMM_spreadsheet.xlsx"
 data_files_dir = "/github/workspace/model"
 
+version = os.getenv('INPUT_VERSION')
 
 def load_dictionary(path):
     yaml_files = fnmatch.filter(os.listdir(path), '*.yml')
@@ -102,6 +103,12 @@ q_df = pd.DataFrame(q_data,columns = q_columns)
 wb = load_workbook(toolkit_file)
 wb_questions = wb['imp-questions']
 wb_answers = wb['imp-answers']
+wb_introduction_sheet = wb['Attribution and License']
+
+# Update version number
+wb_introduction_sheet.protection.sheet = False
+wb_introduction_sheet['B3'] = "'" + str(version_number)
+wb_introduction_sheet.protection.sheet = True
 
 # Clear out old data (may need to update ranges if SAMM changes dramatically)
 wb_questions.delete_cols(1,20)
