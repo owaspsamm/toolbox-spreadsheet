@@ -79,7 +79,7 @@ for t in sorted (q.keys()):
     temp.append(get_id(f,'id',get_id(p,'id',get_id(s,'id',get_id(a,'id',q[t]['activity'],'stream'), 'practice'),'function'),'name'))
     temp.append(get_id(p,'id',get_id(s,'id',get_id(a,'id',q[t]['activity'],'stream'), 'practice'),'name'))
     temp.append(get_id(s,'id',get_id(a,'id',q[t]['activity'],'stream'), 'name'))
-    temp.append(get_id(m,'id',get_id(pL,'id',get_id(a,'id',q[t]['activity'],'level'),'maturitylevel'),'number'))
+    temp.append(get_id(m,'id',get_id(pL,'id',get_id(a,'id',q[t]['activity'],'level'),'maturityLevel'),'number'))
     temp.append(q[t]['text'])
     temp.append(q[t]['quality'])
     temp.append(get_index(answer_set_files,get_id(aS,'id',q[t]['answerset'],'')))
