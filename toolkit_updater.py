@@ -82,7 +82,7 @@ for t in sorted (q.keys()):
     temp.append(get_id(m,'id',get_id(pL,'id',get_id(a,'id',q[t]['activity'],'level'),'maturityLevel'),'number'))
     temp.append(q[t]['text'])
     temp.append(q[t]['quality'])
-    temp.append(get_index(answer_set_files,get_id(aS,'id',q[t]['AnswerSet'],'')))
+    temp.append(get_index(answer_set_files,get_id(aS,'id',q[t]['answerSet'],'')))
     question_files.append(temp)
     
 for z in question_files:
